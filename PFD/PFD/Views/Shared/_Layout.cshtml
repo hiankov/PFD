@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Encoding -->
+    <meta charset="UTF-8">
+    <!-- Device compatibility -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./images/icons/favicon.ico" type="image/x-icon" />
+    <!-- Styling -->
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/login.css">
+    <!-- Site Main Title -->
+    <title>PFD</title>
+</head>
+<body>
+
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light border-bottom box-shadow bg-dark mb-3">
+            <div class="container-fluid">
+                <img class="logo-small" src="./images/logo.jpg" asp-area="" asp-controller="Home" asp-action="Index">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between m-3">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-white fs-5" asp-area="" asp-controller="ClientArea" asp-action="Dashboard">Dashboard</a>
+                        </li>
+                         <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-white fs-5"  href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Accounts
+                            </a>
+                            
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Account Settings</a></li>
+                                <li><a class="dropdown-item" href="#">Manage Subaccounts</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white fs-5" asp-area="" asp-controller="ClientArea" asp-action="AccPlans">Accountant Plans</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white fs-5" asp-area="" asp-controller="ClientArea" asp-action="Transactions">Transactions</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white fs-5" asp-area="" asp-controller="ClientArea" asp-action="Reports">Reports</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Body Content -->
+    <div class="container">
+        <main role="main">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="footer text-white">
+        <div class="container">
+            &copy; 2022 - PFD Project - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+
+    <!-- JavaScripts -->
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

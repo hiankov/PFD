@@ -1,0 +1,218 @@
+html {
+    height: 100%;
+    background-image: linear-gradient(#1a1100, #cc8800);
+    background-attachment: fixed; /*making the gradient background whole */
+}
+
+/* alignment properties */
+.top_menu {
+    text-align: right;
+    height: 30px;
+}
+
+.bottom_menu {
+    text-align: center;
+}
+
+.middle_content {
+    text-align: center;
+}
+
+.middle_image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* logo main properties */
+img.logo-big {
+    display: block;
+    margin-top: 50px;
+    width: 200px;
+    height: 200px;
+    border-radius: 30%;
+    transition: box-shadow 0.2s;
+}
+
+img.logo-small {
+    display: block;
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 80px;
+    height: 80px;
+    border-radius: 30%;
+    transition: box-shadow 0.2s;
+}
+
+img.logo-big:hover {
+    box-shadow: 0px 10px 30px 0px rgba(255, 255, 255, 255), 0 6px 2px 0 rgba(0, 0, 0, 0.19);
+}
+
+img.logo-small:hover {
+    box-shadow: 0px 10px 30px 0px rgba(255, 255, 255, 255), 0 6px 2px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* form fields main properties */
+input.form-control {
+    padding: 10px;
+    font-size: 16px;
+    width: 250px;
+    border-radius: 8px;
+}
+
+    input.form-control:focus {
+        background-color: #cc9900;
+        width: 250px;
+        border-radius: 8px;
+    }
+
+/* links main properties */
+a {
+    font-size: 16px;
+    text-transform: capitalize;
+}
+
+    a.options {
+        margin-left: 18px;
+        line-height: 1.8;
+        text-decoration: none;
+    }
+
+        a.options:hover {
+            color: #ffffff;
+        }
+
+/* footer main properties */
+footer {
+    background-image: linear-gradient(#7a5f29, #7a5f29);
+    border-style: solid;
+    border-color: #ffffff;
+    margin-top: 100px;
+    padding: 20px;
+    height: 15%;
+}
+
+.help-block {
+    color: orange;
+    font-size: 16px;
+    font-style: italic;
+}
+
+/* responsive grid system for main field */
+/* START OF GRID SYSTEM!!! */
+* {
+    box-sizing: border-box;
+}
+
+[class*="main"] {
+    float: left;
+}
+
+/* For mobile phones: */
+[class*="main"] {
+    width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .main1 {
+        width: 8.33%;
+    }
+
+    .main2 {
+        width: 16.66%;
+    }
+
+    .main3 {
+        width: 25%;
+    }
+
+    .main4 {
+        width: 33.33%;
+    }
+
+    .main5 {
+        width: 41.66%;
+    }
+
+    .main6 {
+        width: 50%;
+    }
+
+    .main7 {
+        width: 58.33%;
+        border-style: dashed;
+    }
+
+    .main8 {
+        width: 66.66%;
+    }
+
+    .main9 {
+        width: 75%;
+    }
+
+    .main10 {
+        width: 83.33%;
+    }
+
+    .main11 {
+        width: 91.66%;
+    }
+
+    .main12 {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .main1 {
+        width: 8.33%;
+    }
+
+    .main2 {
+        width: 16.66%;
+    }
+
+    .main3 {
+        width: 25%;
+    }
+
+    .main4 {
+        width: 33.33%;
+    }
+
+    .main5 {
+        width: 41.66%;
+    }
+
+    .main6 {
+        width: 50%;
+    }
+
+    .main7 {
+        width: 58.33%;
+    }
+
+    .main8 {
+        width: 66.66%;
+    }
+
+    .main9 {
+        width: 75%;
+    }
+
+    .main10 {
+        width: 83.33%;
+    }
+
+    .main11 {
+        width: 91.66%;
+    }
+
+    .main12 {
+        width: 100%;
+    }
+}
+/* END OF GRID SYSTEM!!! */

@@ -1,0 +1,51 @@
+h1 {
+  padding: 8px;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* Form fields main properties */
+input.form-control {
+  width: 350px;
+}
+
+input.form-control:focus {
+  width: 380px;
+}
+
+/* links main properties */
+a {
+  color: #000000;
+  font-size: 18px;
+  text-transform: capitalize;
+}
+
+a.options {
+  margin-left: 58px;
+  line-height: 1.8;
+}
+
+a.options:hover {
+  color: #cc9900;
+  text-shadow: 1px 1px #000000;
+}
+
+/* login button */
+button.reg-btn {
+  background-color: #c0c0c0;
+  letter-spacing: 1px;
+  width: 150px;
+  height: 50px;
+  padding: 5px;
+  font-size: 14px;
+  text-transform: uppercase;
+  border-style: hidden;
+  border-radius: 8px;
+  transition: width 1s;
+}
+
+button.reg-btn:hover {
+  background-color: #d9d9d9;
+  width: 350px;
+}

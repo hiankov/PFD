@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32630.192
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PFD", "PFD\PFD.csproj", "{AC9D153D-6C06-4E49-93A2-F9345CD8A28C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AC9D153D-6C06-4E49-93A2-F9345CD8A28C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC9D153D-6C06-4E49-93A2-F9345CD8A28C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC9D153D-6C06-4E49-93A2-F9345CD8A28C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC9D153D-6C06-4E49-93A2-F9345CD8A28C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F43BB4F2-057A-461E-B6DD-772D470E934C}
+	EndGlobalSection
+EndGlobal
